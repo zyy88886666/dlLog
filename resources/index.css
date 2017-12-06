@@ -98,7 +98,7 @@ header {
 	min-height: 400px;
 	padding: 10px 0;
 	background-color: #fff;
-	border-radius: 0 0 10px 10px;
+	border-radius:  10px;
 	box-shadow: 0 5px 10px #4e4e4e;
 	position: relative;
 }
@@ -173,7 +173,7 @@ footer {
 	margin: 0 5px;
 	background-color: #fff;
 	outline: none;
-	border: 1px solid #999fab;
+	border: 3px solid #999fab;
 	cursor: pointer;
 }
 
