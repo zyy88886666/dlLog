@@ -10,7 +10,9 @@
 </head>
 
 <body>
-<table border=0 align=center style="display: block" width="100%">
+<div id="main">
+
+<table border=0 align=left  width="900">
     <tr>
         <td align=left valign=top width="100%" >
             <p style="margin: 0;color: #320357">app调用链</p>
@@ -18,10 +20,10 @@
         </td>
     </tr>
 </table><br/><br/>
-<table border=0 align=left>
+<table border=0 align=left id="table">
     <tr>
         <td align=left valign=top width="100%">
-            <p style="display: inline-block;margin:0;color: #320357">请求调用链</p>
+            <p style="display: inline-block;margin:0 0 20px 0;color: #320357">请求调用链</p>
             <button class="hvr-float-shadow" onclick="openData()">请求链全部展开</button>
             <button class="hvr-float-shadow" onclick="closeData()">请求链全部收缩</button>
             <p><b>注：移动光标至数据上查看详情</b></p>
@@ -29,6 +31,12 @@
         </td>
     </tr>
 </table>
+</div>
+<div id="footer">
+    <p>Copyright ©  All Rights Reserved.</p>
+    <p>丹露成都技术有限公司 版权所有</p>
+    <p>四川省 成都市 高新区环球中心E1-1804</p>
+</footer>
 </body>
 <script type="text/javascript">
     var zNodes = [],appzNodes=[];
@@ -101,8 +109,8 @@
             }
         }
     };
-/*
-      zNodes =[
+
+    /*  zNodes =[
      { id:1, pId:0, name:"展开、折叠 自定义图标不同", open:false},
      { id:11, pId:1, name:"叶子节点1", iconSkin:"icon01"},
      { id:12, pId:1, name:"叶子节点2", iconSkin:"icon02"},
@@ -152,24 +160,9 @@
         });
     }
     
-   /*  //新增加的
-    function addDiyDom(treeId, treeNode) {
-           var spaceWidth = 5;
-           var switchObj = $("#" + treeNode.tId + "_switch"),
-           icoObj = $("#" + treeNode.tId + "_ico");
-           switchObj.remove();
-           icoObj.parent().before(switchObj);
-           var spantxt = $("#" + treeNode.tId + "_span").html();
-           if (spantxt.length > 170) {
-               spantxt = spantxt.substring(0, 170) + "...";
-               $("#" + treeNode.tId + "_span").html(spantxt);
-           }
-       } */
 
-     //app链
 
 /*
-
      $(document).ready(function(){
      var appt = $("#apptree");
      appt = $.fn.zTree.init(appt, setting, appzNodes);
@@ -187,8 +180,8 @@
         { id:31, pId:3, name:"叶子节点1"},
         { id:32, pId:3, name:"叶子节点2"},
         { id:33, pId:3, name:"叶子节点3"}
-        ];
-*/
+        ];*/
+
 
 
     //-->
