@@ -173,8 +173,9 @@ footer {
 	margin: 0 5px;
 	background-color: #fff;
 	outline: none;
-	border: 3px solid #999fab;
+	border: 1px solid #999fab;
 	cursor: pointer;
+	border-radius: 1px solid #999fab;
 }
 
 #main #pagination  .page-btn:hover, #main #pagination2 .page-btn:hover {
@@ -193,6 +194,7 @@ footer {
 	margin: 0 5px;
 	outline: none;
 	border: 1px solid #878d99;
+	border-radius: 1px solid #999fab;
 }
 
 #main #pagination .page-form input.page-jump, #main #pagination2 .page-form input.page-jump
