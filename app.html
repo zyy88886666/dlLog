@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>app显示</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css" media="screen">
+	
+
+#head{
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+}	
+.testswitch {  
+    position: relative;  
+    float: left;   
+    width: 90px;  
+    margin: 50px 25px 50px 25px;  
+    -webkit-user-select:none;   
+    -moz-user-select:none;   
+    -ms-user-select: none;  
+}  
+  
+.testswitch-checkbox {  
+    display: none;  
+}  
+  
+.testswitch-label {  
+    display: block;   
+    overflow: hidden;   
+    cursor: pointer;  
+    border: 2px solid #999999;   
+    border-radius: 20px;  
+}  
+  
+.testswitch-inner {  
+    display: block;   
+    width: 200%;   
+    margin-left: -100%;  
+    transition: margin 0.3s ease-in 0s;  
+}  
+  
+.testswitch-inner::before, .testswitch-inner::after {  
+    display: block;   
+    float: right;   
+    width: 50%;   
+    height: 30px;   
+    padding: 0;   
+    line-height: 30px;  
+    font-size: 14px;   
+    color: white;   
+    font-family:   
+    Trebuchet, Arial, sans-serif;   
+    font-weight: bold;  
+    box-sizing: border-box;  
+}  
+  
+.testswitch-inner::after {  
+    content: attr(data-on);  
+    padding-left: 10px;  
+    background-color: #00e500;   
+    color: #FFFFFF;  
+}  
+  
+.testswitch-inner::before {  
+    content: attr(data-off);  
+    padding-right: 10px;  
+    background-color: #EEEEEE;   
+    color: #999999;  
+    text-align: right;  
+}  
+  
+.testswitch-switch {  
+    position: absolute;   
+    display: block;   
+    width: 22px;  
+    height: 22px;  
+    margin: 4px;  
+    background: #FFFFFF;  
+    top: 0;   
+    bottom: 0;  
+    right: 56px;  
+    border: 2px solid #999999;   
+    border-radius: 20px;  
+    transition: all 0.3s ease-in 0s;  
+}  
+  
+.testswitch-checkbox:checked + .testswitch-label .testswitch-inner {  
+    margin-left: 0;  
+}  
+  
+.testswitch-checkbox:checked + .testswitch-label .testswitch-switch {  
+    right: 0px;   
+}  
+</style>
+</head>
+<body>
+    
+<div id="head">
+  
+
+	<div class="testswitch">
+    <input class="testswitch-checkbox" id="onoffswitch0" type="checkbox">  
+      <label class="testswitch-label" for="onoffswitch0">  
+         <span class="testswitch-inner" data-on="ON" data-off="OFF"></span>  
+         <span class="testswitch-switch"></span>
+      </label>  
+      <span>app-one</span>  
+  </div> 
+
+  	<div class="testswitch">
+    <input class="testswitch-checkbox" id="onoffswitch1" type="checkbox">  
+      <label class="testswitch-label" for="onoffswitch1">  
+         <span class="testswitch-inner" data-on="ON" data-off="OFF"></span>  
+         <span class="testswitch-switch"></span>
+      </label>  
+      <span>app-two</span>  
+  </div>
+
+  	<div class="testswitch">
+    <input class="testswitch-checkbox" id="onoffswitch2" type="checkbox">  
+      <label class="testswitch-label" for="onoffswitch2">  
+         <span class="testswitch-inner" data-on="ON" data-off="OFF"></span>  
+         <span class="testswitch-switch"></span>
+      </label>  
+      <span>app-three</span>  
+  </div>
+
+  	<div class="testswitch">
+    <input class="testswitch-checkbox" id="onoffswitch3" type="checkbox">  
+      <label class="testswitch-label" for="onoffswitch3">  
+         <span class="testswitch-inner" data-on="ON" data-off="OFF"></span>  
+         <span class="testswitch-switch"></span>
+      </label>  
+      <span>app-four</span>  
+  </div>
+
+  	<div class="testswitch">
+    <input class="testswitch-checkbox" id="onoffswitch4" type="checkbox">  
+      <label class="testswitch-label" for="onoffswitch4">  
+         <span class="testswitch-inner" data-on="ON" data-off="OFF"></span>  
+         <span class="testswitch-switch"></span>
+      </label>  
+      <span>app-five</span>  
+  </div>
+
+
+</div>
+
+</body>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script >
+	
+
+	$(document).ready(function() { 
+		
+
+    function clickSwitch() {  
+        if ($("#onoffswitch0").is(':checked')) {  
+              console.log("在ON的状态下");  
+        } else if($("#onoffswitch0").not(':checked')  ) {  
+             console.log("在OFF的状态下");  
+        } 
+         else if ($("#onoffswitch1").is(':checked')) {  
+             console.log("在ON的状态下");  
+        } else if($("#onoffswitch1").not(':checked')  ) {  
+             console.log("在OFF的状态下");  
+        }  
+        else if ($("#onoffswitch2").is(':checked')) {  
+              console.log("在ON的状态下");  
+        } else if($("#onoffswitch2").not(':checked')  ) {  
+            console.log("在OFF的状态下");  
+        }  
+        else if ($("#onoffswitch3").is(':checked')) {  
+              console.log("在ON的状态下");  
+        } else if($("#onoffswitch3").not(':checked')  ) {  
+             console.log("在OFF的状态下");  
+        }  
+        else if ($("#onoffswitch4").is(':checked')) {  
+              console.log("在ON的状态下");  
+        } else if($("#onoffswitch4").not(':checked')  ) {  
+             console.log("在OFF的状态下");  
+        }   
+    };  
+
+    $("#onoffswitch0").on('click', function(){  
+        clickSwitch()  
+    }); 
+    $("#onoffswitch1").on('click', function(){  
+        clickSwitch()  
+    });  
+    $("#onoffswitch2").on('click', function(){  
+        clickSwitch()  
+    });  
+    $("#onoffswitch3").on('click', function(){  
+        clickSwitch()  
+    });  
+    $("#onoffswitch4").on('click', function(){  
+        clickSwitch()  
+    });   
+});  
+</script>
+</html>
